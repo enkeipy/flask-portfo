@@ -11,73 +11,113 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
   <link href="./static/assets/favicon.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>Title page</title>
 
-<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+  <link href="./static/assets/main.d8e0d294.css" rel="stylesheet">
+  <link href="./static/assets/styles.css" rel="stylesheet">
+</head>
 
-<body class="minimal">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
-<!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+<body class="">
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./works.html" title="">02 : Works</a></li>
-          <li><a href="./about.html" title="">03 : About me</a></li>
-          <li><a href="./contact.html" title="">04 : Contact</a></li>
-        </ul>
+  <div class="background-color-layer" style="background-image: url('./static/assets/images/chicago.jpg')"></div>
+  <main class="content-wrapper">
+    <header class="white-text-container section-container">
+      <div class="text-center">
+        <h1>Nikita Kukshinski</h1>
+        <p>Web Developer</p>
+        <p>
+          <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/enkeipy/" target="_blank"
+            title="My LinkedIn page">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="https://github.com/enkeipy/" target="_blank" title='My GitHub page'>
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </header>
 
 
-      </div> 
-    </div>
-  </nav>
-</header>
-<!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./static/assets/images/space.jpg')">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Hello,<br>
-                <span id="typed-strings">
-                  <span>I'm Nikita Kukshinski</span>
-                  <span>Python developer</span>
-                  <span>Working as a Freelance</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>About me</h2>
+              <div class="row">
+                <div class="col-md-12">
+
+                  <p>Have worked with WordPress / PHP over one year, maintaining and developing news website with
+                    millions of unique visitors per month.</p>
+
+                  <p>Experience with: Python, Javascript, Django, Node.js, PHP, HTML, CSS, Git, SQL, REST API, Linux,
+                    Algorithms, SEO, WordPress, Heroku ...</p>
+
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="card">
+            <div class="card-block">
+              <h2>Projects</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./static/assets/images/newslet.jpg" class="img-responsive portfo" alt="">
+                  <h3 class="h5"><a target="_blank" href="https://salty-caverns-00760.herokuapp.com/">Newsletter</a></h3>
+                  <p>Node.js + MailChimp API</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="./static/assets/images/todolist.jpg" class="img-responsive portfo" alt="">
+                  <h3 class="h5"><a target="_blank" href="https://rocky-stream-43837.herokuapp.com/">To Do List</a></h3>
+                  <p>Node.js + MongoDB</p>
+                </div>
+                <div class="col-md-4">
+                  <img src="./static/assets/images/quotes.jpg" class="img-responsive portfo" alt="">
+                  <h3 class="h5"><a target="_blank" href="http://kukshinskiy.pythonanywhere.com/">Quote Request</a></h3>
+                  <p>Python + Django</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     type();
-     movingBackgroundImage();
-  });
-</script>
+  </main>
+  <footer class="footer-container white-text-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>©Thanks for design <a href="http://www.mashup-template.com/"
+              title="Create website with free html template">Mashup Template</a>/<a href="https://unsplash.com/"
+              title="Beautiful Free Images">Unsplash</a></p>
+          <p>
+            <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/enkeipy/" target="_blank"
+              title="My LinkedIn page">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="fa-icon fa-icon-2x" href="https://github.com/enkeipy/" target="_blank" title='My GitHub page'>
+              <i class="fa fa-github"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-<script type="text/javascript" src="./static/main.70a66962.js"></script></body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      scrollRevelation('.card');
+    });
+  </script>
+  <script type="text/javascript" src="./static/assets/main.bc58148c.js"></script>
+</body>
 
 </html>

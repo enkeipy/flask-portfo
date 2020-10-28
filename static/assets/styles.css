@@ -1,0 +1,14 @@
+body {
+    background-image: -webkit-linear-gradient(top,#1D3461,#1F487E);
+    background-image: -o-linear-gradient(top,#1D3461 0,#1F487E 100%);
+    background-image: linear-gradient(180deg,#1D3461 0,#1F487E);
+}
+
+.background-color-layer {
+    box-shadow: inset 0 -40px 60px 10px #1D3461;
+}
+
+.portfo {
+    height: 170px;
+    width: fit-content;
+}
